@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@800&display=swap");
+body {
+  font-family: "Lexend Deca", sans-serif;
+  color: #fff;
+  background: radial-gradient(circle, #914a27 0%, #763014 100%);
+  margin-bottom: 30px;
+}
+
+input[type=number] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.button {
+  background: #ff7d2c;
+  border: 0;
+  border-top: 3px solid #ffc06f;
+  border-bottom: 3px solid #d96922;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  font-family: inherit;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.7);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.box {
+  background-color: #fbfbe3;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.7);
+  border: 10px solid #79c892;
+  border-radius: 30px;
+  text-align: center;
+  padding: 20px;
+}
+.box i {
+  background-color: #ffa147;
+  color: #fff8ad;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* LAYOUT */
+header {
+  position: relative;
+  min-height: 350px;
+}
+header .between {
+  border-top: 0;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.7);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+  color: #f6eda3;
+}
+header .again {
+  background-color: #0c8ff4;
+  border-top: 3px solid #15b4f8;
+  border-bottom: 3px solid #0b63b1;
+  cursor: pointer;
+}
+header .again:hover {
+  background: #15b4f8;
+}
+header .wrapper {
+  width: 100%;
+  max-width: 575px;
+  position: relative;
+}
+header .wrapper h1 {
+  background-color: #ffa76a;
+  border: 0;
+  border-top: 3px solid #f9b473;
+  border-bottom: 3px solid #be5833;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-size: 30px;
+  color: #fffdc5;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 90%;
+  position: absolute;
+  top: -35px;
+  left: 5%;
+}
+header .wrapper .number {
+  background: #addcbb;
+  color: #fffdc5;
+  border-radius: 25px;
+  font-size: 60px;
+  padding: 30px 0;
+  text-align: center;
+  width: 75%;
+  margin: 20px auto 0;
+}
+
+main .guess {
+  display: block;
+  background: #addcbb;
+  border: 0;
+  outline: 0;
+  color: #fffdc5;
+  border-radius: 25px;
+  font-size: 60px;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto 20px;
+}
+main .check {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 24px;
+}
+main .check:hover {
+  background: #ffa94c;
+}
+
+.lost {
+  color: #c3272b;
+}
+.lost i {
+  background-color: #c3272b;
+}
+
+.win {
+  color: #58b575;
+}
+.win i {
+  background-color: #58b575;
+}
+
+.shake {
+  animation: shake 2s ease infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
