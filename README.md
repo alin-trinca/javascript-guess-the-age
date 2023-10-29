@@ -2,4 +2,4 @@
 
 Simple age guessing game with DOM manipulation and event handling
 
-![Guess the Age Screenshot](javascript-guess-the-age.jpg)
+![Guess the Age Screenshot](javascript-guess-the-age.png)
